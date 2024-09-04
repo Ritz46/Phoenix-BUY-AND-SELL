@@ -1,0 +1,16 @@
+.amount{
+    position: relative;
+    left: 0.5rem;
+}
+
+.status{
+    position: relative;
+    left: 0.5rem;
+}
+
+.ofrbtn{
+    position: relative;
+    right: 0.5rem;
+    display: flex;
+    align-items: flex-end;
+}

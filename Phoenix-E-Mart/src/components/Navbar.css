@@ -1,0 +1,201 @@
+.active{
+  background-color: #b700ff;
+}
+
+/* .main-div is from Sidebar page */
+.main-div{
+  margin-top: 10px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+nav .title {
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  width: 15rem;
+  margin-top: 2rem;
+}
+
+.menu-links{
+  margin-top: 1.1rem;
+}
+
+
+.titletext{
+  margin-top: 0.3rem;
+  font-weight: lighter;
+}
+
+.titletext:hover{
+  color:white;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+ list-style: none; 
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+  background-color:rgb(175, 0, 255) ;
+  color: white;
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+.searchbar{
+  background-color: #000000;
+  z-index: 1;
+  width: 25rem;
+  height: 2rem;
+  display: flex;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.searchicon img{
+  height: 1.5rem;
+  height: 2rem;
+  background-color: white;
+  padding: 4px;
+}
+
+.searchtext input{
+  background-color: black;
+  color: white;
+  margin-left: 3px;
+  height: 2rem;
+  width: 25rem;
+  width: 23rem;
+  border-bottom: 1px solid white;
+}
+
+.navbar-contents{
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+/* Navbar styling */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+.navbar-toggle {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10rem;
+}
+
+/* Overlay styling */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  /* background-color: #3e3e3e; */
+  text-align: center;
+  padding: 5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+  nav .menu {
+      display: flex;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
+      display: flex;
+  }
+
+  nav ul li {
+      width: 100%;
+      text-align: center;
+  }
+
+  nav ul li a {
+      margin: 0.2rem 0.5rem;
+  }
+}

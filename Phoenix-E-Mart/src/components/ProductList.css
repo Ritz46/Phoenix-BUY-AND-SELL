@@ -1,0 +1,11 @@
+.listwraper{
+    justify-content: center;
+    padding: 10rem;
+    padding-top:5rem ;
+}
+
+.list-element{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    border-radius: 1rem;
+}

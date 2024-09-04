@@ -1,0 +1,16 @@
+.sidebar{
+    background-color: rgb(0, 0, 0) !important;
+
+}
+
+.menu{
+    background-color: black;
+    border: 1px solid black;
+}
+
+.menu_list{
+    margin-bottom: 3rem;
+    color: blueviolet;
+    border: 1px solid rgb(255, 255, 255);
+
+}
